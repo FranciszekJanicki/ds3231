@@ -14,7 +14,6 @@ ds3231_err_t ds3231_initialize(ds3231_t* ds3231,
                                ds3231_interface_t const* interface);
 ds3231_err_t ds3231_deinitialize(ds3231_t* ds3231);
 
-
 ds3231_err_t ds3231_get_temp_data_scaled(ds3231_t const* ds3231, float* scaled);
 ds3231_err_t ds3231_get_temp_data_raw(ds3231_t const* ds3231, int16_t* raw);
 
