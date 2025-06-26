@@ -5,9 +5,7 @@ target_sources(ds3231 PRIVATE
 )
 
 target_include_directories(ds3231 PUBLIC
-)
-
-target_link_libraries(ds3231 PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 target_compile_options(ds3231 PUBLIC
