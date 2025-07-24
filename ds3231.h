@@ -28,34 +28,55 @@ ds3231_err_t ds3231_get_hour_data(ds3231_t const* ds3231, uint8_t* hour);
 ds3231_err_t ds3231_get_minute_data(ds3231_t const* ds3231, uint8_t* minute);
 ds3231_err_t ds3231_get_second_data(ds3231_t const* ds3231, uint8_t* second);
 
-ds3231_err_t ds3231_get_control_reg(ds3231_t const* ds3231, ds3231_control_reg_t* reg);
-ds3231_err_t ds3231_set_control_reg(ds3231_t const* ds3231, ds3231_control_reg_t const* reg);
+ds3231_err_t ds3231_get_control_reg(ds3231_t const* ds3231,
+                                    ds3231_control_reg_t* reg);
+ds3231_err_t ds3231_set_control_reg(ds3231_t const* ds3231,
+                                    ds3231_control_reg_t const* reg);
 
-ds3231_err_t ds3231_get_status_reg(ds3231_t const* ds3231, ds3231_status_reg_t* reg);
-ds3231_err_t ds3231_set_status_reg(ds3231_t const* ds3231, ds3231_status_reg_t const* reg);
+ds3231_err_t ds3231_get_status_reg(ds3231_t const* ds3231,
+                                   ds3231_status_reg_t* reg);
+ds3231_err_t ds3231_set_status_reg(ds3231_t const* ds3231,
+                                   ds3231_status_reg_t const* reg);
 
-ds3231_err_t ds3231_get_aging_offset_reg(ds3231_t const* ds3231, ds3231_aging_offset_reg_t* reg);
+ds3231_err_t ds3231_get_aging_offset_reg(ds3231_t const* ds3231,
+                                         ds3231_aging_offset_reg_t* reg);
 ds3231_err_t ds3231_set_aging_offset_reg(ds3231_t const* ds3231,
                                          ds3231_aging_offset_reg_t const* reg);
 
-ds3231_err_t ds3231_get_temp_reg(ds3231_t const* ds3231, ds3231_temp_reg_t* reg);
-ds3231_err_t ds3231_get_second_reg(ds3231_t const* ds3231, ds3231_second_reg_t* reg);
-ds3231_err_t ds3231_get_minute_reg(ds3231_t const* ds3231, ds3231_minute_reg_t* reg);
-ds3231_err_t ds3231_get_hour_reg(ds3231_t const* ds3231, ds3231_hour_reg_t* reg);
+ds3231_err_t ds3231_get_temp_reg(ds3231_t const* ds3231,
+                                 ds3231_temp_reg_t* reg);
+ds3231_err_t ds3231_get_second_reg(ds3231_t const* ds3231,
+                                   ds3231_second_reg_t* reg);
+ds3231_err_t ds3231_get_minute_reg(ds3231_t const* ds3231,
+                                   ds3231_minute_reg_t* reg);
+ds3231_err_t ds3231_get_hour_reg(ds3231_t const* ds3231,
+                                 ds3231_hour_reg_t* reg);
 ds3231_err_t ds3231_get_day_reg(ds3231_t const* ds3231, ds3231_day_reg_t* reg);
-ds3231_err_t ds3231_get_date_reg(ds3231_t const* ds3231, ds3231_date_reg_t* reg);
-ds3231_err_t ds3231_get_month_century_reg(ds3231_t const* ds3231, ds3231_month_century_reg_t* reg);
-ds3231_err_t ds3231_get_year_reg(ds3231_t const* ds3231, ds3231_year_reg_t* reg);
+ds3231_err_t ds3231_get_date_reg(ds3231_t const* ds3231,
+                                 ds3231_date_reg_t* reg);
+ds3231_err_t ds3231_get_month_century_reg(ds3231_t const* ds3231,
+                                          ds3231_month_century_reg_t* reg);
+ds3231_err_t ds3231_get_year_reg(ds3231_t const* ds3231,
+                                 ds3231_year_reg_t* reg);
 
-ds3231_err_t ds3231_get_alarm1_second_reg(ds3231_t const* ds3231, ds3231_alarm1_second_reg_t* reg);
-ds3231_err_t ds3231_get_alarm1_minute_reg(ds3231_t const* ds3231, ds3231_alarm1_minute_reg_t* reg);
-ds3231_err_t ds3231_get_alarm1_hour_reg(ds3231_t const* ds3231, ds3231_alarm1_hour_reg_t* reg);
-ds3231_err_t ds3231_get_alarm1_day_reg(ds3231_t const* ds3231, ds3231_alarm1_date_reg_t* reg);
-ds3231_err_t ds3231_get_alarm1_date_reg(ds3231_t const* ds3231, ds3231_alarm1_date_reg_t* reg);
+ds3231_err_t ds3231_get_alarm1_second_reg(ds3231_t const* ds3231,
+                                          ds3231_alarm1_second_reg_t* reg);
+ds3231_err_t ds3231_get_alarm1_minute_reg(ds3231_t const* ds3231,
+                                          ds3231_alarm1_minute_reg_t* reg);
+ds3231_err_t ds3231_get_alarm1_hour_reg(ds3231_t const* ds3231,
+                                        ds3231_alarm1_hour_reg_t* reg);
+ds3231_err_t ds3231_get_alarm1_day_reg(ds3231_t const* ds3231,
+                                       ds3231_alarm1_date_reg_t* reg);
+ds3231_err_t ds3231_get_alarm1_date_reg(ds3231_t const* ds3231,
+                                        ds3231_alarm1_date_reg_t* reg);
 
-ds3231_err_t ds3231_get_alarm2_minute_reg(ds3231_t const* ds3231, ds3231_alarm2_minute_reg_t* reg);
-ds3231_err_t ds3231_get_alarm2_hour_reg(ds3231_t const* ds3231, ds3231_alarm2_hour_reg_t* reg);
-ds3231_err_t ds3231_get_alarm2_day_reg(ds3231_t const* ds3231, ds3231_alarm2_day_reg_t* reg);
-ds3231_err_t ds3231_get_alarm2_date_reg(ds3231_t const* ds3231, ds3231_alarm2_date_reg_t* reg);
+ds3231_err_t ds3231_get_alarm2_minute_reg(ds3231_t const* ds3231,
+                                          ds3231_alarm2_minute_reg_t* reg);
+ds3231_err_t ds3231_get_alarm2_hour_reg(ds3231_t const* ds3231,
+                                        ds3231_alarm2_hour_reg_t* reg);
+ds3231_err_t ds3231_get_alarm2_day_reg(ds3231_t const* ds3231,
+                                       ds3231_alarm2_day_reg_t* reg);
+ds3231_err_t ds3231_get_alarm2_date_reg(ds3231_t const* ds3231,
+                                        ds3231_alarm2_date_reg_t* reg);
 
 #endif // DS3231_DS3231_H
