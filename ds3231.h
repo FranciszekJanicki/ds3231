@@ -4,6 +4,10 @@
 #include "ds3231_config.h"
 #include "ds3231_registers.h"
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     ds3231_config_t config;
     ds3231_interface_t interface;
@@ -78,5 +82,9 @@ ds3231_err_t ds3231_get_alarm2_day_reg(ds3231_t const* ds3231,
                                        ds3231_alarm2_day_reg_t* reg);
 ds3231_err_t ds3231_get_alarm2_date_reg(ds3231_t const* ds3231,
                                         ds3231_alarm2_date_reg_t* reg);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // DS3231_DS3231_H

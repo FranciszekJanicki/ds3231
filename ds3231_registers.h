@@ -3,6 +3,10 @@
 
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 typedef struct {
     uint8_t eosc : 1;
     uint8_t bbsqw : 1;
@@ -127,5 +131,9 @@ typedef struct {
     uint8_t ten_date : 2;
     uint8_t date : 4;
 } ds3231_alarm2_date_reg_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // DS3231_DS3231_REGISTERS_H

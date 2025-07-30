@@ -5,6 +5,10 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #define DS3231_SLAVE_ADDRESS 0b1101000
 #define DS3231_TEMP_SCALE 0.25F
 
@@ -83,5 +87,9 @@ typedef struct {
     ds3231_err_t (*bus_write_data)(void*, uint8_t, uint8_t const*, size_t);
     ds3231_err_t (*bus_read_data)(void*, uint8_t, uint8_t*, size_t);
 } ds3231_interface_t;
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif // DS3231_DS3231_CONFIG_H
